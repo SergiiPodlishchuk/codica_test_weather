@@ -2,15 +2,30 @@ import axios from "axios";
 
 const API_KEY = "122a2fa1f27a8aa65f79180c2a64b5f2";
 
-axios.defaults.baseURL = "http://api.openweathermap.org/";
+axios.defaults.baseURL = "http://api.openweathermap.org/data/2.5";
 
-export default async function getWeather(query) {
+async function getWeather(query) {
+  try {
+    const data = await axios.get(`/weather?q=${query}&APPID=${API_KEY}`);
+    return data.data;
+  } catch (error) {
+    throw Error(error);
+  }
+}
+
+async function getHourlyWeather(lat, lon, exclude) {
   try {
     const data = await axios.get(
-      `data/2.5/weather?q=${query}&APPID=${API_KEY}`
+      `/onecall?lat=${lat}&lon=${lon}&exclude=${exclude}&appid=${API_KEY}`
     );
     return data.data;
   } catch (error) {
     throw Error(error);
   }
 }
+
+// eslint-disable-next-line
+export default {
+  getWeather,
+  getHourlyWeather,
+};

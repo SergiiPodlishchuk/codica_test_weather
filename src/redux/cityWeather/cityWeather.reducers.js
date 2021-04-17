@@ -24,7 +24,13 @@ const cityId = createReducer("", {
   [cityWeatherActions.cityId]: (state, action) => action.payload,
 });
 
+const hourlyWeatherCity = createReducer([], {
+  [cityWeatherActions.getHourlyWeatherSuccess]: (state, action) =>
+    action.payload.hourly,
+});
+
 export default combineReducers({
   cities,
   cityId,
+  hourlyWeatherCity,
 });

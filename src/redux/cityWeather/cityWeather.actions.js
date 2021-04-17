@@ -12,6 +12,10 @@ const updateCityRequest = createAction("city/updateRequest");
 const updateCitySuccess = createAction("city/updateSuccess");
 const updateCityError = createAction("city/updateError");
 
+const getHourlyWeatherRequest = createAction("city/getRequest");
+const getHourlyWeatherSuccess = createAction("city/getSuccess");
+const getHourlyWeatherError = createAction("city/getError");
+
 // eslint-disable-next-line
 export default {
   cityId,
@@ -22,4 +26,7 @@ export default {
   updateCityRequest,
   updateCitySuccess,
   updateCityError,
+  getHourlyWeatherRequest,
+  getHourlyWeatherSuccess,
+  getHourlyWeatherError,
 };

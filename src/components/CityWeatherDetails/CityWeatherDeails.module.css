@@ -1,0 +1,19 @@
+.listHourTemp{
+    list-style: none;
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 165px;
+}
+.itemHourTemp{
+    width: 50px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+.temp{
+
+}
+
+.time{
+    
+}
