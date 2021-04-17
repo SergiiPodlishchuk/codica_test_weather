@@ -15,7 +15,6 @@ export default function ListCardsCities() {
 
   const addCity = (e) => {
     e.preventDefault();
-    console.log(value);
     dispatch(cityWeatherOperations.addCity(value));
     setValue("");
   };

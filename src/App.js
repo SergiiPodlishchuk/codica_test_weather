@@ -3,26 +3,19 @@ import { Switch, BrowserRouter, Route, Redirect } from "react-router-dom";
 
 import "./App.css";
 
-import api from "./api/api";
-
 import ListCardsCities from "./components/ListCardsCities/ListCardsCities";
 import CityWeatherDetails from "./components/CityWeatherDetails/CityWeatherDetails";
+import Header from "./components/Header/Header";
 
 function App() {
-  api("Kharkov").then((data) => console.log(data));
-
   return (
     <div className="App">
       <BrowserRouter>
-        <header> Weather per city </header>
+        <Header />
         <Suspense fallback={<div>Hi</div>}>
           <Switch>
             <Route path="/" exact component={ListCardsCities} />
-            <Route
-              path="/cities/city:id"
-              exact
-              component={CityWeatherDetails}
-            />
+            <Route path="/cityDetails/:cityId" component={CityWeatherDetails} />
             <Redirect to="/" />
           </Switch>
         </Suspense>

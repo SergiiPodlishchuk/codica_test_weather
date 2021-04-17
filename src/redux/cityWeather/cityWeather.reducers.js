@@ -10,6 +10,14 @@ const cities = createReducer([], {
   ],
   [cityWeatherActions.deleteCity]: (state, action) =>
     state.filter(({ id }) => id !== action.payload),
+
+  [cityWeatherActions.updateCitySuccess]: (state, action) =>
+    state.map((city) => {
+      if (city.id === action.payload.id) {
+        return action.payload;
+      }
+      return city;
+    }),
 });
 
 const cityId = createReducer("", {

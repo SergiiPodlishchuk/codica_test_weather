@@ -1,0 +1,28 @@
+.cardCity{
+    position: relative;
+}
+
+.titleCity{
+    margin: 0;
+    padding: 0;
+}
+
+.listIcons{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.deleteButton{
+    display: block;
+    position: absolute;
+    right: 0;
+}
+
+.iconWeather{
+    display: block;
+    width: 50px;
+}
