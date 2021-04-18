@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_KEY = "122a2fa1f27a8aa65f79180c2a64b5f2";
 
-axios.defaults.baseURL = "http://api.openweathermap.org/data/2.5";
+axios.defaults.baseURL = "https://api.openweathermap.org/data/2.5";
 
 async function getWeather(query) {
   try {
