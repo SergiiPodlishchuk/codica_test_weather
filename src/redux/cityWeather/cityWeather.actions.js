@@ -16,6 +16,8 @@ const getHourlyWeatherRequest = createAction("city/getRequest");
 const getHourlyWeatherSuccess = createAction("city/getSuccess");
 const getHourlyWeatherError = createAction("city/getError");
 
+const errorOff = createAction("error/off");
+
 // eslint-disable-next-line
 export default {
   cityId,
@@ -29,4 +31,5 @@ export default {
   getHourlyWeatherRequest,
   getHourlyWeatherSuccess,
   getHourlyWeatherError,
+  errorOff,
 };

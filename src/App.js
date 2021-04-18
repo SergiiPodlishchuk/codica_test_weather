@@ -1,15 +1,18 @@
 import React, { Suspense } from "react";
 import { Switch, BrowserRouter, Route, Redirect } from "react-router-dom";
 
+import Container from "@material-ui/core/Container";
+
 import "./App.css";
 
 import ListCardsCities from "./components/ListCardsCities/ListCardsCities";
 import CityWeatherDetails from "./components/CityWeatherDetails/CityWeatherDetails";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <Container maxWidth="lg">
       <BrowserRouter>
         <Header />
         <Suspense fallback={<div>Hi</div>}>
@@ -19,8 +22,9 @@ function App() {
             <Redirect to="/" />
           </Switch>
         </Suspense>
+        <Footer />
       </BrowserRouter>
-    </div>
+    </Container>
   );
 }
 
