@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/codica_test_weather/static/css/main.4f05b733.chunk.css",
-    "main.js": "/codica_test_weather/static/js/main.c446976c.chunk.js",
-    "main.js.map": "/codica_test_weather/static/js/main.c446976c.chunk.js.map",
+    "main.js": "/codica_test_weather/static/js/main.e7036362.chunk.js",
+    "main.js.map": "/codica_test_weather/static/js/main.e7036362.chunk.js.map",
     "runtime-main.js": "/codica_test_weather/static/js/runtime-main.7d5713cd.js",
     "runtime-main.js.map": "/codica_test_weather/static/js/runtime-main.7d5713cd.js.map",
     "static/js/2.945bf898.chunk.js": "/codica_test_weather/static/js/2.945bf898.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.7d5713cd.js",
     "static/js/2.945bf898.chunk.js",
     "static/css/main.4f05b733.chunk.css",
-    "static/js/main.c446976c.chunk.js"
+    "static/js/main.e7036362.chunk.js"
   ]
 }
